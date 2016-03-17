@@ -1,0 +1,12 @@
+<div class="small-6 small-offset-3 columns">
+  <div class="callout primary">
+    <h3>Top Stories</h3>
+    <p>
+    <ul>
+      <% @news_now.news.each do |story| %>
+        <li><a href="<%=story["url"]%>"> <%= story["title"] %> </a></li>
+      <% end %>
+    </ul>
+    </p>
+  </div>
+</div>
